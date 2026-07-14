@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iterum Technologies</title>
+
+    <link rel="icon" type="image/png" href="icon_light.png" />
+
+    <style>
+      /* Modern CSS Reset & Variables */
+      :root {
+        --primary-blue: #004274; /* Matching your logo's deep blue color */
+        --bg-color: #f8fafc;
+        --text-color: #334155;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        padding: 20px;
+      }
+
+      /* Container styling */
+      .container {
+        text-align: center;
+        animation: fadeIn 0.8s ease-out;
+        max-width: 450px;
+        width: 100%;
+      }
+
+      /* Logo styling */
+      .logo {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 2.5rem;
+        /* Subtle modern shadow to give it a trendy depth */
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.03));
+      }
+
+      /* Divider line */
+      .divider {
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgba(0, 66, 116, 0.2), transparent);
+        margin-bottom: 2rem;
+      }
+
+      /* Email link styling */
+      .email-link {
+        display: inline-block;
+        color: var(--primary-blue);
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      /* Subtle trendy hover effect */
+      .email-link:hover {
+        border-color: rgba(0, 66, 116, 0.2);
+        background-color: rgba(0, 66, 116, 0.04);
+        transform: translateY(-1px);
+      }
+
+      /* Fade-in animation for a premium feel */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo_light.png" alt="Iterum Technologies Logo" class="logo" />
+
+      <div class="divider"></div>
+
+      <a href="mailto:hello@iterumtechnologies.com" class="email-link">
+        hello@iterumtechnologies.com
+      </a>
+    </div>
+  </body>
+</html>
