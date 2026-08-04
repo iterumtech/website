@@ -545,4 +545,13 @@ main {
     background: #226fb6;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
   }
+
+  .btn-cta {
+    background: linear-gradient(135deg, #1c8ce0, #0052cc);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn-cta:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+  }
 }
