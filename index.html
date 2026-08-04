@@ -4,103 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iterum Technologies</title>
+    <meta
+      name="description"
+      content="Iterum Technologies is a California-based software company building productivity tools for small and mid-sized service businesses. Its first product, AlloTalk, is a push-to-talk app that keeps teams connected in the field."
+    />
 
-    <link rel="icon" type="image/png" href="icon_light.png" />
-
-    <style>
-      /* Modern CSS Reset & Variables */
-      :root {
-        --primary-blue: #004274; /* Matching your logo's deep blue color */
-        --bg-color: #f8fafc;
-        --text-color: #334155;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-        padding: 20px;
-      }
-
-      /* Container styling */
-      .container {
-        text-align: center;
-        animation: fadeIn 0.8s ease-out;
-        max-width: 450px;
-        width: 100%;
-      }
-
-      /* Logo styling */
-      .logo {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 2.5rem;
-        /* Subtle modern shadow to give it a trendy depth */
-        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.03));
-      }
-
-      /* Divider line */
-      .divider {
-        height: 1px;
-        background: linear-gradient(to right, transparent, rgba(0, 66, 116, 0.2), transparent);
-        margin-bottom: 2rem;
-      }
-
-      /* Email link styling */
-      .email-link {
-        display: inline-block;
-        color: var(--primary-blue);
-        text-decoration: none;
-        font-size: 1.1rem;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        padding: 10px 20px;
-        border-radius: 8px;
-        border: 1px solid transparent;
-        transition: all 0.3s ease;
-      }
-
-      /* Subtle trendy hover effect */
-      .email-link:hover {
-        border-color: rgba(0, 66, 116, 0.2);
-        background-color: rgba(0, 66, 116, 0.04);
-        transform: translateY(-1px);
-      }
-
-      /* Fade-in animation for a premium feel */
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <img src="logo_light.png" alt="Iterum Technologies Logo" class="logo" />
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <img src="logo.svg" alt="Iterum Technologies" />
+        </a>
+        <a class="btn btn-primary" href="mailto:hello@iterumtech.com">Contact</a>
+      </div>
+    </header>
 
-      <div class="divider"></div>
+    <main class="hero">
+      <div class="container">
+        <p class="hero-phrase">
+          Iterum Technologies builds communication and productivity software for businesses. Its
+          first product, <strong>AlloTalk</strong>, is a push-to-talk app for crews that want to
+          stay connected in the field.
+        </p>
 
-      <a href="mailto:hello@iterumtech.com" class="email-link">
-        hello@iterumtech.com
-      </a>
-    </div>
+        <div class="divider"></div>
+
+        <div class="promo">
+          <img src="allotalk.svg" alt="AlloTalk" />
+          <a class="btn btn-cta" href="https://app.allotalk.us" target="_blank" rel="noopener noreferrer">
+            Try AlloTalk today
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 12h14M13 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span class="footer-copyright">&copy; Iterum Technologies LLC <span id="year"></span></span>
+        <span class="footer-sep">|</span>
+        <span class="footer-links">
+          <a href="privacy/">Privacy</a>
+          <a href="terms/">Terms</a>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
